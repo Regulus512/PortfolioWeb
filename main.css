@@ -4,46 +4,111 @@
     text-align: center;
 }
 
+a {
+    cursor: pointer;
+}
+
+body {
+    background-color: seashell;
+}
+
 header#main-header {
-    width: 1000px; height: 140px;
-    background: green;
-    text-align: left;
-}
-
-#main-header > div.main-image-holder {
-    display:inline-block;
-    width:100px;
-    height:140px;
-    background:whitesmoke;
-}
-
-nav{
-    display:inline-block;
-    width:894px;
-    height:50px;
-    vertical-align: bottom;
-    background-color:cornflowerblue;
-}
-
-
-/* ----------------------------------------*/
-nav > ul{
-    width:894px;
-    height:50px;;
-    background:black;
-    
-}
-ul > li{
-    background:skyblue;
-    display:inline-block;
-    width:140px; height: 26px;
-    padding: 12px 0;
-    margin: 0 15px;
-}
-
-main#main{
     width: 1000px;
-    height: 500px;
-    background: beige;
+    height: 140px;
+    text-align: left;
+    /* background: green; */
 }
 
+#main-header>div.main-image-holder {
+    display: inline-block;
+    width: 100px;
+    height: 140px;
+    /* background:whitesmoke; */
+}
+
+#main-header>div.main-right {
+    display: inline-block;
+    width: 894px;
+    height: 140px;
+    vertical-align: bottom;
+    text-align: right;
+    /*background: whitesmoke;*/
+}
+
+nav.main-mini-bar {
+    margin: 10px 0;
+    /* background-color:cyan; */
+}
+
+nav.main-bar {
+    width: 894px;
+    height: 50px;
+    margin-top: 30px;
+}
+
+.main-bar>ul {
+    font-size: 20px;
+}
+
+.main-bar li {
+    display: inline-block;
+    width: 140px;
+    height: 42px;
+    padding-top: 8px;
+    margin: 0 15px;
+    background-color: cornflowerblue;
+    color: white;
+}
+
+.main-bar li:hover {
+    background: blue;
+    color: white;
+}
+
+.main-mini-bar>ul {
+    text-align: right;
+}
+
+.main-mini-bar li {
+    display: inline-block;
+    text-align: left;
+    width: 90px;
+    margin: 2px 0;
+    font-size: 14px;
+    font-weight: bold;
+    /* background: cadetblue; */
+}
+.main-mini-bar li::before{
+    content:"|";
+    display:inline-block;
+    color:grey;
+    margin-right:30px;
+}
+#main {
+    width: 1000px;
+    height: auto;
+    background: beige;
+    padding: 10px;
+}
+
+#main>section {
+    display: inline-block;
+    width: 300px;
+    height: 500px;
+    vertical-align: bottom;
+    background: black;
+}
+
+#main>article {
+    display: inline-block;
+    width: 690px;
+    height: 500px;
+    background: plum;
+}
+
+footer {
+    width: 100%;
+    height: 180px;
+    color: white;
+    background-color: darkblue;
+}
